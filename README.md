@@ -65,6 +65,7 @@ Example: `Rscript --vanilla actual_separability.R human_pancreas.loom activated_
 **Input arguments to script:**
 
 * Loom file containing example cells representing the two clusters. Contains the cluster ID for each cell
+* Cluster IDs and frequencies for the two clusters
 
 **Output:** Predicted separability of the clusters as a function of total cell number.
   
@@ -73,7 +74,7 @@ Example: `Rscript --vanilla actual_separability.R human_pancreas.loom activated_
   1. Number of cells (ranging from 1,000 to 100,000 - with a step of 1,000)
   2. Predicted separability
 
-Example: `Rscript --vanilla predicted_separability.R human_pancreas_activated_quiescent_stellate.loom 0.03 0.02 predictions.tsv`
+Example: `Rscript --vanilla predicted_separability.R human_pancreas_activated_quiescent_stellate.loom activated_stellate 0.03 quiescent_stellate 0.02 predictions.tsv`
 
 ### Additional notes:
 
